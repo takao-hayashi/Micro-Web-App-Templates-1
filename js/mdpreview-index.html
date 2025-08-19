@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8">
+<title>Markdown Preview</title>
+<textarea id="src" rows="10" cols="60"># Hello\n**bold** _italic_</textarea>
+<div id="out"></div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  const src = document.getElementById('src'), out = document.getElementById('out');
+  const render = () => out.innerHTML = marked.parse(src.value);
+  src.addEventListener('input', render); render();
+</script>
