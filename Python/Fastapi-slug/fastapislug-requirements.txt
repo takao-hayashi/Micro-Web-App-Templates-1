@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+pydantic
+
+Start:pip install -r fastapislug-requirements.txt && fastapislug-main.py
